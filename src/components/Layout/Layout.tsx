@@ -10,7 +10,7 @@ const Page: React.FC = ({ children }) => {
 
   return (
     <LayoutContainer>
-      <Head title="Rainbow" />
+      <Head />
       <RainbowBandage />
       <Header />
       <Content>
