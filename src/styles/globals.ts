@@ -2,15 +2,20 @@ import { createGlobalStyle } from 'styled-components';
 
 import { mediaQueries } from './mediaQueries';
 
-export default createGlobalStyle`  
+export default createGlobalStyle`
+  @font-face {
+      font-family: 'Roboto';
+      src: local('Roboto'), local('Roboto'),
+        url(${'./fonts/Roboto-Regular.ttf'}) format('truetype'),
+        url(${'./fonts/Roboto-Medium.ttf'}) format('truetype'),
+        url(${'./fonts/Roboto-Bold.ttf'}) format('truetype');
+      font-weight: 300, 400, 700;
+      font-style: normal;
+  }
+
   :root {
-    --blue: #116193;
-    --light-blue: #b8cbd6;
-    --ocean-blue: #00e4e2;
-    --gray: #e6e6e6;    
-    --light-gray: #f2f2f2;
-    --mediun-gray: #919191;
-    --dark-gray: #626262;
+    --white: #FFFFFF;
+    --purple: #8A28AD;
   }
 
   * {

@@ -4,25 +4,19 @@ import Head from './Head';
 import Header from './Header';
 import Content from './Content';
 
-const Container = styled.main`
-  width: 100%;
-  height: 100vh;
-  
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-`;
+import { LayoutContainer, RainbowBandage } from './styled';
 
 const Page: React.FC = ({ children }) => {
 
   return (
-    <Container>
+    <LayoutContainer>
       <Head title="Rainbow" />
-      <Header title="Rainbow" />
+      <RainbowBandage />
+      <Header />
       <Content>
         {children}
       </Content>
-    </Container>
+    </LayoutContainer>
   )
 }
 

@@ -1,13 +1,9 @@
-import { Container, Title } from './styled';
+import { HeaderContainer, HeaderTitle } from './styled';
 
-type HeaderProps = {
-  title: string;
-}
-
-const Header: React.FC<HeaderProps> = ({ title }) => (
-  <Container>
-    <Title>{title}</Title>
-  </Container>
-)
+const Header: React.FC = () => (
+  <HeaderContainer>
+    <HeaderTitle>Rainbow</HeaderTitle>
+  </HeaderContainer>
+);
 
 export default Header;
